@@ -1,0 +1,45 @@
+
+		
+		h1 {
+		color:#FF00FF; 
+			font-size: 30px;
+			text-decoration: none;
+			
+			
+			}
+		
+		
+		.red_text {
+			color: red;
+		}
+		
+		.small_cap_letter {
+			font-variant: small_cap_letter;
+			}
+			
+		.style_boarder{
+		/* line width, line type, color */
+			border: 2px solid black;
+			
+			}
+			
+		.Doc_header {
+			/* line width, line type, color */
+			border: 2px solid black;
+			padding: 10px;
+			margin: auto;
+			Width: 1000px;
+			Color: black;
+		}
+		
+		.Doc_Body {
+		margin: auto;
+		padding: 10px;
+		Width: 1000px;
+		}
+		
+		.doc_footer{
+		margin: auto;
+		padding: 10px;
+		Width: 1000px;
+		}
