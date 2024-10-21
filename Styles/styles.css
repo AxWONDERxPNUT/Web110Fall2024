@@ -43,3 +43,96 @@
 		padding: 10px;
 		Width: 1000px;
 		}
+		
+		.flex_box1 {
+			display: flex;
+			background-color: red;
+		}
+		
+		.flex_box > div {
+			background-color: purple;
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+/* Styling for the entire container */
+.nav-container {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    width: fit-content;
+    margin: 0 auto;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px; /* Space between buttons */
+}
+
+.nav-container li {
+    margin: 0;
+}
+
+.nav-container a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 18px;
+    width: 200px;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    line-height: 150px; /* Vertically centers the text */
+    transition: opacity 0.3s ease;
+}
+
+/* Background for each link */
+.nav-container a[href="TF2.html"] {
+    background-image: url('../Images/TF2.jpg');
+}
+
+.nav-container a[href="Warframe.html"] {
+    background-image: url('../Images/warframe.gif');
+}
+
+.nav-container a[href="War Thunder.html"] {
+    background-image: url('../Images/warthunder.jpg');
+}
+
+.nav-container a[href="Elite Dangerous.html"] {
+    background-image: url('../Images/Elitedangerous.jpg');
+}
+
+.nav-container a[href="Dark Souls.html"] {
+    background-image: url('../Images/darksouls.png');
+}
+
+/* Optional hover effect */
+.nav-container a:hover {
+    opacity: 0.8;
+}
