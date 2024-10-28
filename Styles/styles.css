@@ -28,7 +28,7 @@
 			border: 2px solid black;
 			padding: 10px;
 			margin: auto;
-			Width: 1000px;
+			Width: 800px;
 			Color: black;
 		}
 		
@@ -51,6 +51,13 @@
 		
 		.flex_box > div {
 			background-color: purple;
+		}
+		
+		
+		input {
+			margin-top: 15px;
+			border-color: red;
+			color: red;
 		}
 		
 		
@@ -113,7 +120,7 @@
 
 /* Background for each link */
 .nav-container a[href="TF2.html"] {
-    background-image: url('../Images/TF2.jpg');
+    background-image: url('../Images/TF2.gif');
 }
 
 .nav-container a[href="Warframe.html"] {
@@ -121,17 +128,20 @@
 }
 
 .nav-container a[href="War Thunder.html"] {
-    background-image: url('../Images/warthunder.jpg');
+    background-image: url('../Images/Warthunder.gif');
 }
 
 .nav-container a[href="Elite Dangerous.html"] {
-    background-image: url('../Images/Elitedangerous.jpg');
+    background-image: url('../Images/elite-dangerous-top-gun.gif');
 }
 
 .nav-container a[href="Dark Souls.html"] {
-    background-image: url('../Images/darksouls.png');
+    background-image: url('../Images/darksouls.gif');
 }
 
+.nav-container a[href="Jordan RPG Game Reviews.html"] {
+    background-image: url('../Images/home.gif');
+}
 /* Optional hover effect */
 .nav-container a:hover {
     opacity: 0.8;
