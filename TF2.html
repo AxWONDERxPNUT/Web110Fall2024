@@ -22,43 +22,68 @@
         </ul>
     </div>
 
-    <h1 class="Doc_header">The purpose of this page is to function as a form, so i can get your recomendations aswell.</h1>
-	<div class="Doc_header">
-	
-	
-	<form>
-		<label for="Name">Name</label>
-		<input type="text" id="Name"placeholder="Jon Doe">
-		<br>
-		
-		<label for="Fav_Game">Favorite Game</label>
-		<input type="text" id="Fav_Game">
-		<br>
+    <h1>The purpose of this page is to function as a game review board, 
+        where I will post some of my favorite games and why I like them.</h1>
 		
 		
-		<p>What game do you think looks the coolest out of the 5 below?</P>
 		
-		<input type="radio" id="cool_game_1" name="Coolest_Game"
-		<label for="cool_game_1">Team Fortress 2</label>
-		<input type="radio" id="cool_game_2" name="Coolest_Game"
-		<label for="cool_game_2">Warframe 2</label>
-		<input type="radio" id="cool_game_3" name="Coolest_Game"
-		<label for="cool_game_3">War Thunder</label>
-		<input type="radio" id="cool_game_4" name="Coolest_Game"
-		<label for="cool_game_4">Elite Dangerous</label>
-		<input type="radio" id="cool_game_5" name="Coolest_Game"
-		<label for="cool_game_5">Dark Souls</label>
-		<br>
 		
-		<input type="submit" value="submit">
-	
-	</form>
-	
-	
-	
-	
-	</div>
-	
-	
+		<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submission Form</title>
+</head>
+<body>
+
+    <h2>Submission Form</h2>
+    <form action="#" method="post">
+
+        <!-- Text Input -->
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" required>
+        <br><br>
+
+        <!-- Password Input -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <br><br>
+
+        <!-- Email Input -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+
+        <!-- Date Input -->
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob">
+        <br><br>
+
+        <!-- Radio Buttons -->
+        <p>Gender:</p>
+        <label for="male">Male</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="female">Female</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <br><br>
+
+        <!-- Select (Dropdown) -->
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+            <option value="usa">USA</option>
+            <option value="canada">Canada</option>
+            <option value="uk">UK</option>
+            <option value="australia">Australia</option>
+        </select>
+        <br><br>
+
+        <!-- Submit Button -->
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+</html>
+
 </body>
 </html>
