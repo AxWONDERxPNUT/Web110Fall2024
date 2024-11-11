@@ -60,6 +60,15 @@
 			color: red;
 		}
 		
+		a:visited {
+			color: green;
+		
+		
+		
+		}
+		
+		
+		
 		
 		
 		
@@ -88,6 +97,7 @@
     margin: 0 auto;
     display: flex;
     gap: 20px;
+    transition: background-color 0.3s ease;
 }
 
 .nav-container ul {
@@ -102,6 +112,7 @@
     margin: 0;
 }
 
+/* Link styling */
 .nav-container a {
     display: block;
     color: white;
@@ -115,7 +126,7 @@
     background-position: center;
     background-repeat: no-repeat;
     line-height: 150px; /* Vertically centers the text */
-    transition: opacity 0.3s ease;
+    transition: transform 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* Background for each link */
@@ -142,7 +153,27 @@
 .nav-container a[href="Jordan RPG Game Reviews.html"] {
     background-image: url('../Images/home.gif');
 }
-/* Optional hover effect */
+
+/* Hover effects for transition styling */
 .nav-container a:hover {
-    opacity: 0.8;
+    opacity: 0.9;
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    filter: brightness(1.1);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
