@@ -1,32 +1,38 @@
-/* General Styles */
-body {
-    font-family: Arial, sans-serif;
+/* General Reset */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Body and Background */
+body {
+    font-family: 'Cinzel', serif;
+    background-color: #2d2a6f; /* Dark purple for mystical feeling */
+    color: #fff;
+}
+
+/* Header */
 header {
-    background-color: #333;
-    color: white;
-    padding: 10px;
+    background-color: #1d1b3d; /* Darker purple */
+    padding: 20px;
+    text-align: center;
 }
 
 nav ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
 }
 
 nav ul li {
-    display: inline;
+    display: inline-block;
     margin-right: 20px;
 }
 
 nav ul li a {
-    color: white;
+    color: #FFD700; /* Gold color for a fantasy vibe */
     text-decoration: none;
-    transition: color 0.3s;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
@@ -35,66 +41,139 @@ nav ul li a:hover {
 
 /* Hero Section */
 #hero {
-    background-image: url('hero-image.jpg');
+    background-image: url('fantasy-hero-image.jpg');
     background-size: cover;
+    background-position: center;
+    height: 80vh;
     text-align: center;
-    padding: 100px 20px;
-    color: white;
-    font-size: 2rem;
+    padding: 40px;
+    color: #FFF;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
 }
 
 #hero h1 {
-    font-size: 3rem;
-    margin-bottom: 10px;
+    font-size: 4rem;
+    margin-bottom: 20px;
+    font-family: 'Cinzel', serif;
 }
 
 #hero p {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+    margin-bottom: 40px;
 }
 
-/* Gallery Section */
+.button {
+    background-color: #FFD700; /* Gold */
+    color: #2d2a6f; /* Dark purple */
+    padding: 15px 30px;
+    border: none;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #FF6347; /* Red-orange */
+}
+
+/* Table */
+table {
+    width: 100%;
+    margin-top: 30px;
+    border-collapse: collapse;
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+th, td {
+    padding: 15px;
+    border: 1px solid #555;
+}
+
+th {
+    background-color: #2d2a6f;
+    color: #FFD700;
+}
+
+td {
+    background-color: #3e3b8a;
+}
+
+/* Form */
+input, button {
+    padding: 15px;
+    font-size: 1rem;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+input {
+    background-color: #3e3b8a;
+    color: #FFF;
+    border: 1px solid #FFD700;
+}
+
+button[type="submit"] {
+    background-color: #FFD700;
+    color: #2d2a6f;
+}
+
+/* Gallery */
 #gallery {
     padding: 20px;
 }
 
 .gallery-grid {
     display: flex;
-    gap: 20px;
     flex-wrap: wrap;
+    gap: 20px;
+}
+
+.gallery-item {
+    width: 45%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
 }
 
 .gallery-item img {
     width: 100%;
     height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: block;
 }
 
 .gallery-item p {
+    background-color: #1d1b3d;
+    color: #FFD700;
+    padding: 10px;
     text-align: center;
     font-size: 1.1rem;
-    margin-top: 10px;
 }
 
 /* Footer */
 footer {
-    background-color: #222;
+    background-color: #1d1b3d;
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 15px;
     font-size: 0.9rem;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    #hero {
-        padding: 50px 10px;
-    }
-
     .gallery-grid {
         flex-direction: column;
     }
-
     nav ul li {
         display: block;
         margin-bottom: 10px;
